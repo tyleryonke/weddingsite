@@ -20,13 +20,9 @@ var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
 var Main = require("../components/Main");
-// var Child1 = require("../components/children/Child1");
-// var Child2 = require("../components/children/Child2");
-// var GrandChild1 = require("../components/children/grandchildren/GrandChild1");
-// var GrandChild2 = require("../components/children/grandchildren/GrandChild2");
 
 var OurWedding = require("../components/children/OurWedding");
-var Details = require("../components/children/Details");
+var Accomodations = require("../components/children/Accomodations");
 var Photos = require("../components/children/Photos");
 var Registry = require("../components/children/Registry");
 var GuestBook = require("../components/children/GuestBook");
@@ -44,8 +40,8 @@ module.exports = (
 
       {/* If user selects OurWedding then show the appropriate component*/}
       <Route path="OurWedding" component={OurWedding} />
-      {/* If user selects details then show the appropriate component*/}
-      <Route path="Details" component={Details} />
+      {/* If user selects Accomodations then show the appropriate component*/}
+      <Route path="Accomodations" component={Accomodations} />
        {/* If user selects Photos then show the appropriate component*/}
       <Route path="Photos" component={Photos} />
        {/* If user selects Registry then show the appropriate component*/}

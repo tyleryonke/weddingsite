@@ -10,18 +10,25 @@ var Main = React.createClass({
 
       <div className="container">
         <div className="jumbotron">
-          <h2><strong>Molly and Tyler's Wedding</strong></h2>
-          <p className="subtitle"><em>An event to end all weddings (or at least top them)</em></p>
-          <p className="subtitle" id="countdown"></p>
+          <div>
+            <img className="topPic" id="tyTop" src={require("../../public/assets/tylerpole.jpg")}/>
+            <div id="midText">
+              <h2><strong>Tyler and Molly's Wedding</strong></h2>
+              <br />
+              <p className="subtitle" id="topInfo"><em>May 18th, 2018 &#9679; Aurora, IL</em></p>
+              <p className="subtitle" id="countdown"></p>
+            </div>
+            <img className="topPic" id="molTop" src={require("../../public/assets/mollypole.jpg")}/>          
+          </div>
           <hr />
           <p>
-            <a href="#/OurWedding" className="btn btn-primary btn-lg">Our Wedding</a>
-            <a href="#/Details" className="btn btn-primary btn-lg">Details</a>
-            <a href="#/Photos" className="btn btn-primary btn-lg">Photos</a>
-            <a href="#/Registry" className="btn btn-primary btn-lg">Registry</a>
-            <a href="#/GuestBook" className="btn btn-primary btn-lg">Guest Book</a>
-            <a href="#/WeddingParty" className="btn btn-primary btn-lg">Wedding Party</a>
-            <a href="#/Playlist" className="btn btn-primary btn-lg" id="btn-playlist"><img className="icon" src={require("../../public/assets/spotify.png")}/>Playlist</a>
+            <a href="#/OurWedding" className="btn btn-primary btn-lg link">Our Wedding</a>
+            <a href="#/Accomodations" className="btn btn-primary btn-lg link">Accomodations</a>
+            <a href="#/WeddingParty" className="btn btn-primary btn-lg link">Wedding Party</a>
+            <a href="#/Photos" className="btn btn-primary btn-lg link">Photos</a>
+            <a href="#/Registry" className="btn btn-primary btn-lg link">Registry</a>
+            <a href="#/GuestBook" className="btn btn-primary btn-lg link" id="btn-guestbook">Guest Book</a>
+            <a href="#/Playlist" className="btn btn-primary btn-lg link" id="btn-playlist"><img className="icon" src={require("../../public/assets/spotify.png")}/>Playlist</a>
             
           </p>
         </div>
